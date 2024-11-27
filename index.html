@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="todo-header">
+            <h2>ToDo List</h2>
+            <img src="images/notebook.gif" alt="Notebook Icon" height="50px" />
+        </header>
+
+        <div class="todo-body">
+            <input
+                type="text"
+                id="todoText"
+                class="todo-input"
+                placeholder="Add your task"
+                autocomplete="off"
+                aria-label="Add new task"
+            />
+            <img 
+                src="images/plus.png" 
+                alt="Add Task Button" 
+                id="AddUpdateClick"
+                onclick="CreateToDoData()"
+                aria-label="Add task"
+            />
+        </div>
+
+        <h5 id="AlertMessage" aria-live="polite"></h5>
+        <ul id="list-items" class="list-items"></ul>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
